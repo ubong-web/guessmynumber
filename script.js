@@ -17,6 +17,10 @@ let scores, currentScore, activePlayer, playing;
 
 //Starting condition
 
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
+
 const init = function () {
   scores = [0, 0];
   currentScore = 0;
@@ -33,6 +37,8 @@ const init = function () {
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
+
+  newFeature();
 };
 init();
 
